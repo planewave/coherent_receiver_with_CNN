@@ -17,9 +17,16 @@
 **Note** that it works in basedband, but only the signal phase components are considered, and the signal amplitudes are ignored. This is only resonable when a perfect timing has been done and no visable ISI in the received signal. 
 
 ## Equalizer
-`equalization.ipynb` is in progress right now. The traing signal is synthesized using Numpy only, so no Matlab is required. 
+`Passband_Demodulation.ipynb` is in progress. QPSK demodulation in passband. No complex-valued signal is involved.
+Currently can only demodulate signal when carrier frequency is integer multiple of the symbol rate.
+To remove this limitation, a phase compensation is required.
+
+`equalization.ipynb` is obsolete. The traing signal is synthesized using Numpy only, so no Matlab is required. 
 Currently a fractionally spaced, decision feedback equalizer has been built for a multipath transmission, however the performance is not as good as expected.
 
 ## To do
-* Figure out a complex-valued CNN for equalizer.
-* integrate CFO compensation in the equalizer.
+* [] Demodulation in passband with phase compensation.
+* [] Integrate CFO compensation.
+* [] Integrate DFE for multipath
+
+
