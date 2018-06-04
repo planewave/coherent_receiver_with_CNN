@@ -25,8 +25,8 @@ To remove this limitation, a phase compensation is required.
 Currently a fractionally spaced, decision feedback equalizer has been built for a multipath transmission, however the performance is not as good as expected.
 
 ## To do
-* [] Demodulation in passband with phase compensation.
-* [] Integrate CFO compensation.
-* [] Integrate DFE for multipath
+* Demodulation in passband with phase compensation.
+* Integrate CFO compensation.
+* Integrate DFE for multipath
 
 
