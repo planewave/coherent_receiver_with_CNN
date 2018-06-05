@@ -3,7 +3,11 @@
 ## Requirements
 * Pytorch (with Numpy, Scipy etc.)
 * Matlab (only for .m file)
-* Google Colaboratory (optional)
+* Google Colaboratory (current working envoronment)
+
+## Passband demodulation with carrier phase compensation
+`Passband_Demodulation.ipynb` is a in progress, QPSK demodulator in passband. No complex-valued signal is involved.
+
 ## Symbol timing recovery
 `sig_gen5_new_timing.m` is used for data generation
 
@@ -17,16 +21,12 @@
 **Note** that it works in basedband, but only the signal phase components are considered, and the signal amplitudes are ignored. This is only resonable when a perfect timing has been done and no visable ISI in the received signal. 
 
 ## Equalizer
-`Passband_Demodulation.ipynb` is in progress. QPSK demodulation in passband. No complex-valued signal is involved.
-Currently can only demodulate signal when carrier frequency is integer multiple of the symbol rate.
-To remove this limitation, a phase compensation is required.
-
 `equalization.ipynb` is obsolete. The traing signal is synthesized using Numpy only, so no Matlab is required. 
 Currently a fractionally spaced, decision feedback equalizer has been built for a multipath transmission, however the performance is not as good as expected.
 
 ## To do
-* Demodulation in passband with phase compensation.
-* Integrate CFO compensation.
+* ~~Demodulation in passband with phase compensation.~~
+* Integrate CFO estimation/compensation.
 * Integrate DFE for multipath
 
 
