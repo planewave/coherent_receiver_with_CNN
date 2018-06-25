@@ -6,7 +6,7 @@
 * Google Colaboratory (current working envoronment)
 
 ## Passband demodulation with carrier phase compensation
-`Passband_Demodulation.ipynb` is a in progress, QPSK demodulator in passband. No complex-valued signal is involved.
+`Passband_Demodulation.ipynb` QPSK demodulator in passband. The symbol phase is the regression output. Note that the loss function, `circ_mse_loss`, is a customized one. The `phase_step` is used to solve the problem raised when the carrier frequency are not integer multiple of the symbol rate.
 
 ## Symbol timing recovery
 `sig_gen5_new_timing.m` is used for data generation
